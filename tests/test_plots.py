@@ -29,7 +29,7 @@ def test_histogram_grid_makes_one_axis_per_numeric_column(frame):
     fig = plots.histogram_grid(frame, ncols=2)
 
     visible = [ax for ax in fig.axes if ax.get_visible()]
-    assert len(visible) == 3  # a, b, c — not the categorical column
+    assert len(visible) == 3  # a, b, c, not the categorical column
 
 
 def test_histogram_grid_hides_unused_axes_in_the_grid(frame):

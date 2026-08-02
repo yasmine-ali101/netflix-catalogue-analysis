@@ -82,7 +82,7 @@ def explode_multi_value(frame: pd.DataFrame, column: str, separator: str = ",") 
     """Split a delimited column (`listed_in`, `cast`, `country`) into one row per value.
 
     Returns a Series rather than mutating the frame. The notebooks did this with
-    `df_copy = df` — which is a reference, not a copy — so each "exploded copy"
+    `df_copy = df`, which is a reference, not a copy, so each "exploded copy"
     silently overwrote the original dataframe's column, and every later cell ran
     against mutated data.
     """

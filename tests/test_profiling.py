@@ -1,7 +1,7 @@
 """Tests for the shared profiling library.
 
 Two of these are regression tests for bugs that existed in the original
-notebooks — see the README.
+notebooks, see the README.
 """
 
 import numpy as np

@@ -1,4 +1,4 @@
-# Public datasets — fetched by scripts/download_data.py, not committed
+# Public datasets, fetched by scripts/download_data.py, not committed
 data/*.csv
 
 # Python

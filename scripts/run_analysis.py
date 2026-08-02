@@ -41,7 +41,7 @@ def _save(fig, study: str, name: str) -> None:
 
 
 # --------------------------------------------------------------------------
-# Study 1 — Supermarket sales
+# Study 1, Supermarket sales
 # --------------------------------------------------------------------------
 
 def supermarket() -> dict:
@@ -69,7 +69,7 @@ def supermarket() -> dict:
         "duplicates": int(frame.duplicated().sum()),
     }
 
-    # The accounting identity the notebook hypothesised — now actually verified.
+    # The accounting identity the notebook hypothesised, now actually verified.
     if {"Total", "cogs", "gross income"} <= set(frame.columns):
         residual = (frame["Total"] - frame["cogs"] - frame["gross income"]).abs()
         findings["identity_total_equals_cogs_plus_gross_income"] = {
@@ -120,7 +120,7 @@ def supermarket() -> dict:
 
 
 # --------------------------------------------------------------------------
-# Study 2 — FIFA 19 players
+# Study 2, FIFA 19 players
 # --------------------------------------------------------------------------
 
 def _parse_money(series: pd.Series) -> pd.Series:
@@ -198,7 +198,7 @@ def fifa() -> dict:
 
 
 # --------------------------------------------------------------------------
-# Study 3 — Netflix catalogue
+# Study 3, Netflix catalogue
 # --------------------------------------------------------------------------
 
 def netflix() -> dict:
@@ -252,7 +252,7 @@ def netflix() -> dict:
         int(k): int(v) for k, v in additions.items() if not pd.isna(k)
     }
 
-    # Content age at the moment it was added — has Netflix shifted toward new titles?
+    # Content age at the moment it was added, has Netflix shifted toward new titles?
     frame["age_at_add"] = frame["year_added"] - frame["release_year"]
     valid = frame[frame["age_at_add"].between(0, 80)]
     findings["median_content_age_at_add_by_year"] = {
