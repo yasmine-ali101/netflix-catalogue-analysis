@@ -6,7 +6,7 @@ rather than the copy-pasted plotting helpers the original notebook used.
 <p align="left">
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white">
   <img alt="pandas" src="https://img.shields.io/badge/pandas-2.2+-150458?logo=pandas&logoColor=white">
-  <img alt="Tests" src="https://img.shields.io/badge/tests-16%20passing-16A34A">
+  <img alt="Tests" src="https://github.com/yasmine-ali101/netflix-catalogue-analysis/actions/workflows/tests.yml/badge.svg">
 </p>
 
 ---
